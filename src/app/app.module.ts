@@ -1,3 +1,5 @@
+import { TabsPage } from './../pages/tabs/tabs';
+import { LoginPage } from './../pages/login/login';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -13,6 +15,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     HomePage,
+    LoginPage,
+    TabsPage,    
     ListPage
   ],
   imports: [
@@ -23,6 +27,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     HomePage,
+    LoginPage,
+    TabsPage,
     ListPage
   ],
   providers: [

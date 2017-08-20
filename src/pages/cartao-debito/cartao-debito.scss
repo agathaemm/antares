@@ -1,3 +1,18 @@
 page-cartao-debito {
+    
+    .saida {
+        border: 1px solid red;
+    }
 
+    .entrada {
+        border: 1px solid green;
+    }
+    
+    .add {
+        background-color: green;
+    }
+
+    .remove {
+        background-color: red;
+    }
 }

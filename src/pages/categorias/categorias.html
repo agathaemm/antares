@@ -5,42 +5,33 @@
           <ion-icon name="menu"></ion-icon>
       </button>
     </ion-buttons>
-    <ion-title>Gastos Fixos</ion-title>
+    <ion-title>Categorias</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-searchbar></ion-searchbar>
+
   <ion-card *ngFor="let item of [1,2,3]">
-      <ion-card-header>
-        <ion-title>Claro</ion-title>
-      </ion-card-header>
       <ion-card-content>
         <ion-grid>
-          <ion-row>
-            <ion-col>
-              <p>Telefone</p>
-              <p>R$ 24,50</p>
-              <p>dia 05</p>
+          <ion-row class="row-top">
+            <ion-col class="col-left">
+              <ion-title>Telefone</ion-title>
             </ion-col>
-            <ion-col text-right>
+            <ion-col class="col-right">
               <button ion-button icon-only color="dark" outline>
                 <ion-icon name="star"></ion-icon>
               </button>
             </ion-col>
           </ion-row>
-          <ion-row>
-            <ion-col>
+          <ion-row class="row-bottom">
+            <ion-col class="col-left">
               <button ion-button icon-only color="dark" outline>
                 <ion-icon name="trash"></ion-icon>
               </button>
             </ion-col>
-            <ion-col>
-              <button ion-button icon-only color="dark" outline>
-                <ion-icon name="download"></ion-icon>
-              </button>
-            </ion-col>
-            <ion-col>
+            <ion-col class="col-right">
               <button ion-button icon-only color="dark" outline>
                 <ion-icon name="create"></ion-icon>
               </button>
@@ -51,7 +42,7 @@
     </ion-card>
 
       <ion-fab right bottom>
-        <button ion-fab class="add-button">
+        <button ion-fab class="add-button" mini>
           <ion-icon name="add"></ion-icon>
         </button>
       </ion-fab>

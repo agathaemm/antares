@@ -22,11 +22,12 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
+      { title: 'Inicio',                  component: "TabsPage" },
       { title: 'Editar usuário',          component: "SignupPage" },
       { title: 'Contas fixas',            component: "ContasFixasPage" },
       { title: 'Contas temporárias',      component: "ContasTemporariasPage" },
       { title: 'Categorias',              component: "CategoriasPage" },
-      { title: 'Adicionar valor crítico', component: "AddValorCriticoPage" },
+      { title: 'Adicionar valor crítico', component: "ValorCriticoPage" },
       { title: 'Sair',                    component: "LoginPage" }
     ];
 
@@ -34,9 +35,5 @@ export class MyApp {
 
   openPage(page) {
     this.nav.setRoot(page.component);
-  }
-
-  public abreSuporte() {
-    this.navCtrl.push( "SuportePage" );
   }
 }
